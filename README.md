@@ -1,6 +1,10 @@
 # ZFS_crypto_unlock
 A script that auto unlocks your encrypted ZFS datasets on boot.  With general instructions to setup ZFS encryption using keyfiles.
 
+**Proxmox VE:** See [PROXMOX.md](PROXMOX.md) for VM-disk encryption,
+boot ordering, service enablement, and failure verification. See
+[the Proxmox test results](PROXMOX-TEST-RESULTS.md) for the tested scope.
+
 I created this so if someone stole my server they would also need the USB with the keyfiles to access the encrypted datasets.  To accomplish this I save the keyfiles to the usb and I hide the USB elsewhere, well outside of the case.  I'm not going to get too specific on how I did that, as obfuscation is part of the security here, but you can get quite creative.  
 Some ideas:
 A USB extension that is hidden
@@ -97,3 +101,6 @@ zfs get all poolname/datasetname | grep keylocation
 
 # How was AI used in this script?
 AI Was not used to create this script
+
+The supplemental Proxmox instructions, verification helper, and test report were
+created with AI assistance and validated against a disposable Proxmox test VM.

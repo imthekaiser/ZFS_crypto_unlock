@@ -1,0 +1,534 @@
+{
+  "date": "2026-09-13",
+  "host_label": "hv3",
+  "upstream_commit": "2075454c3f77c7e9deaa86e1eab8d04e0ff412f8",
+  "upstream_script_sha256": "74c6f0078111f88ac43330159a01eba12162391913d6cebc083bafa47802bc59",
+  "verifier_sha256": "c73bbbab6934e76bc4afbae649732ca7937a50c7718f7c9c2ce3251f4cb44271",
+  "environment": [
+    {
+      "command": [
+        "pveversion"
+      ],
+      "returncode": 0,
+      "output": "pve-manager/9.2.18/614bede5d65599c6 (running kernel: 7.0.14-16-pve)\n"
+    },
+    {
+      "command": [
+        "zfs",
+        "version"
+      ],
+      "returncode": 0,
+      "output": "zfs-2.4.4-pve1\nzfs-kmod-2.4.4-pve1\n"
+    },
+    {
+      "command": [
+        "uname",
+        "-r"
+      ],
+      "returncode": 0,
+      "output": "7.0.14-16-pve\n"
+    }
+  ],
+  "script_runs": [
+    {
+      "phase": "cases",
+      "exit_status": 0,
+      "output": "Loading key for kasa_unlock_test_20260913/filesystem...\nSuccessfully loaded key for kasa_unlock_test_20260913/filesystem.\nSuccessfully mounted kasa_unlock_test_20260913/filesystem.\n",
+      "postrun_properties": {
+        "kasa_unlock_test_20260913": {
+          "type": "filesystem",
+          "encryptionroot": "-",
+          "keystatus": "-",
+          "mounted": "no",
+          "canmount": "on"
+        },
+        "kasa_unlock_test_20260913/filesystem": {
+          "type": "filesystem",
+          "encryptionroot": "kasa_unlock_test_20260913/filesystem",
+          "keystatus": "available",
+          "mounted": "yes",
+          "canmount": "on"
+        }
+      }
+    },
+    {
+      "phase": "cases",
+      "exit_status": 0,
+      "output": "",
+      "postrun_properties": {
+        "kasa_unlock_test_20260913": {
+          "type": "filesystem",
+          "encryptionroot": "-",
+          "keystatus": "-",
+          "mounted": "no",
+          "canmount": "on"
+        },
+        "kasa_unlock_test_20260913/filesystem": {
+          "type": "filesystem",
+          "encryptionroot": "kasa_unlock_test_20260913/filesystem",
+          "keystatus": "available",
+          "mounted": "yes",
+          "canmount": "on"
+        }
+      }
+    },
+    {
+      "phase": "cases",
+      "exit_status": 0,
+      "output": "",
+      "postrun_properties": {
+        "kasa_unlock_test_20260913": {
+          "type": "filesystem",
+          "encryptionroot": "-",
+          "keystatus": "-",
+          "mounted": "no",
+          "canmount": "on"
+        },
+        "kasa_unlock_test_20260913/filesystem": {
+          "type": "filesystem",
+          "encryptionroot": "kasa_unlock_test_20260913/filesystem",
+          "keystatus": "available",
+          "mounted": "no",
+          "canmount": "on"
+        }
+      }
+    },
+    {
+      "phase": "cases",
+      "exit_status": 0,
+      "output": "Loading key for kasa_unlock_test_20260913/filesystem...\nKey load error: Failed to open key material file: No such file or directory\nFailed to load key for kasa_unlock_test_20260913/filesystem. Attempting to mount anyway...\ncannot mount 'kasa_unlock_test_20260913/filesystem': encryption key not loaded\nFailed to mount kasa_unlock_test_20260913/filesystem.\n",
+      "postrun_properties": {
+        "kasa_unlock_test_20260913": {
+          "type": "filesystem",
+          "encryptionroot": "-",
+          "keystatus": "-",
+          "mounted": "no",
+          "canmount": "on"
+        },
+        "kasa_unlock_test_20260913/filesystem": {
+          "type": "filesystem",
+          "encryptionroot": "kasa_unlock_test_20260913/filesystem",
+          "keystatus": "unavailable",
+          "mounted": "no",
+          "canmount": "on"
+        }
+      }
+    },
+    {
+      "phase": "cases",
+      "exit_status": 0,
+      "output": "Loading key for kasa_unlock_test_20260913/filesystem...\nKey load error: Incorrect key provided for 'kasa_unlock_test_20260913/filesystem'.\nFailed to load key for kasa_unlock_test_20260913/filesystem. Attempting to mount anyway...\ncannot mount 'kasa_unlock_test_20260913/filesystem': encryption key not loaded\nFailed to mount kasa_unlock_test_20260913/filesystem.\n",
+      "postrun_properties": {
+        "kasa_unlock_test_20260913": {
+          "type": "filesystem",
+          "encryptionroot": "-",
+          "keystatus": "-",
+          "mounted": "no",
+          "canmount": "on"
+        },
+        "kasa_unlock_test_20260913/filesystem": {
+          "type": "filesystem",
+          "encryptionroot": "kasa_unlock_test_20260913/filesystem",
+          "keystatus": "unavailable",
+          "mounted": "no",
+          "canmount": "on"
+        }
+      }
+    },
+    {
+      "phase": "cases",
+      "exit_status": 0,
+      "output": "Loading key for kasa_unlock_test_20260913/filesystem...\nSuccessfully loaded key for kasa_unlock_test_20260913/filesystem.\nSuccessfully mounted kasa_unlock_test_20260913/filesystem.\n",
+      "postrun_properties": {
+        "kasa_unlock_test_20260913": {
+          "type": "filesystem",
+          "encryptionroot": "-",
+          "keystatus": "-",
+          "mounted": "no",
+          "canmount": "on"
+        },
+        "kasa_unlock_test_20260913/filesystem": {
+          "type": "filesystem",
+          "encryptionroot": "kasa_unlock_test_20260913/filesystem",
+          "keystatus": "available",
+          "mounted": "yes",
+          "canmount": "on"
+        }
+      }
+    },
+    {
+      "phase": "cases",
+      "exit_status": 0,
+      "output": "Loading key for kasa_unlock_test_20260913/filesystem...\nSuccessfully loaded key for kasa_unlock_test_20260913/filesystem.\nSuccessfully mounted kasa_unlock_test_20260913/filesystem.\nLoading key for kasa_unlock_test_20260913/filesystem/child...\nKey load error: Keys must be loaded for encryption root of 'kasa_unlock_test_20260913/filesystem/child' (kasa_unlock_test_20260913/filesystem).\nFailed to load key for kasa_unlock_test_20260913/filesystem/child. Attempting to mount anyway...\nSuccessfully mounted kasa_unlock_test_20260913/filesystem/child.\n",
+      "postrun_properties": {
+        "kasa_unlock_test_20260913": {
+          "type": "filesystem",
+          "encryptionroot": "-",
+          "keystatus": "-",
+          "mounted": "no",
+          "canmount": "on"
+        },
+        "kasa_unlock_test_20260913/filesystem": {
+          "type": "filesystem",
+          "encryptionroot": "kasa_unlock_test_20260913/filesystem",
+          "keystatus": "available",
+          "mounted": "yes",
+          "canmount": "on"
+        },
+        "kasa_unlock_test_20260913/filesystem/child": {
+          "type": "filesystem",
+          "encryptionroot": "kasa_unlock_test_20260913/filesystem",
+          "keystatus": "available",
+          "mounted": "yes",
+          "canmount": "on"
+        }
+      }
+    },
+    {
+      "phase": "cases-rest",
+      "exit_status": 0,
+      "output": "Loading key for kasa_unlock_test_20260913/volume...\nSuccessfully loaded key for kasa_unlock_test_20260913/volume.\ncannot open 'kasa_unlock_test_20260913/volume': operation not applicable to datasets of this type\nFailed to mount kasa_unlock_test_20260913/volume.\n",
+      "postrun_properties": {
+        "kasa_unlock_test_20260913": {
+          "type": "filesystem",
+          "encryptionroot": "-",
+          "keystatus": "-",
+          "mounted": "no",
+          "canmount": "on"
+        },
+        "kasa_unlock_test_20260913/filesystem": {
+          "type": "filesystem",
+          "encryptionroot": "kasa_unlock_test_20260913/filesystem",
+          "keystatus": "available",
+          "mounted": "yes",
+          "canmount": "on"
+        },
+        "kasa_unlock_test_20260913/filesystem/child": {
+          "type": "filesystem",
+          "encryptionroot": "kasa_unlock_test_20260913/filesystem",
+          "keystatus": "available",
+          "mounted": "yes",
+          "canmount": "on"
+        },
+        "kasa_unlock_test_20260913/volume": {
+          "type": "volume",
+          "encryptionroot": "kasa_unlock_test_20260913/volume",
+          "keystatus": "available",
+          "mounted": "-",
+          "canmount": "-"
+        }
+      }
+    },
+    {
+      "phase": "cases-rest",
+      "exit_status": 0,
+      "output": "Loading key for kasa_unlock_test_20260913/canmount-off...\nSuccessfully loaded key for kasa_unlock_test_20260913/canmount-off.\ncannot mount 'kasa_unlock_test_20260913/canmount-off': 'canmount' property is set to 'off'\nFailed to mount kasa_unlock_test_20260913/canmount-off.\n",
+      "postrun_properties": {
+        "kasa_unlock_test_20260913": {
+          "type": "filesystem",
+          "encryptionroot": "-",
+          "keystatus": "-",
+          "mounted": "no",
+          "canmount": "on"
+        },
+        "kasa_unlock_test_20260913/canmount-off": {
+          "type": "filesystem",
+          "encryptionroot": "kasa_unlock_test_20260913/canmount-off",
+          "keystatus": "available",
+          "mounted": "no",
+          "canmount": "off"
+        },
+        "kasa_unlock_test_20260913/filesystem": {
+          "type": "filesystem",
+          "encryptionroot": "kasa_unlock_test_20260913/filesystem",
+          "keystatus": "available",
+          "mounted": "yes",
+          "canmount": "on"
+        },
+        "kasa_unlock_test_20260913/filesystem/child": {
+          "type": "filesystem",
+          "encryptionroot": "kasa_unlock_test_20260913/filesystem",
+          "keystatus": "available",
+          "mounted": "yes",
+          "canmount": "on"
+        },
+        "kasa_unlock_test_20260913/volume": {
+          "type": "volume",
+          "encryptionroot": "kasa_unlock_test_20260913/volume",
+          "keystatus": "available",
+          "mounted": "-",
+          "canmount": "-"
+        }
+      }
+    },
+    {
+      "phase": "vm-unlock",
+      "exit_status": 0,
+      "output": "Loading key for kasa_unlock_test_20260913/canmount-off...\nSuccessfully loaded key for kasa_unlock_test_20260913/canmount-off.\ncannot mount 'kasa_unlock_test_20260913/canmount-off': 'canmount' property is set to 'off'\nFailed to mount kasa_unlock_test_20260913/canmount-off.\nLoading key for kasa_unlock_test_20260913/canmount-off/vm-105-disk-0...\nKey load error: Keys must be loaded for encryption root of 'kasa_unlock_test_20260913/canmount-off/vm-105-disk-0' (kasa_unlock_test_20260913/canmount-off).\nFailed to load key for kasa_unlock_test_20260913/canmount-off/vm-105-disk-0. Attempting to mount anyway...\ncannot open 'kasa_unlock_test_20260913/canmount-off/vm-105-disk-0': operation not applicable to datasets of this type\nFailed to mount kasa_unlock_test_20260913/canmount-off/vm-105-disk-0.\n",
+      "postrun_properties": {
+        "kasa_unlock_test_20260913": {
+          "type": "filesystem",
+          "encryptionroot": "-",
+          "keystatus": "-",
+          "mounted": "no",
+          "canmount": "on"
+        },
+        "kasa_unlock_test_20260913/canmount-off": {
+          "type": "filesystem",
+          "encryptionroot": "kasa_unlock_test_20260913/canmount-off",
+          "keystatus": "available",
+          "mounted": "no",
+          "canmount": "off"
+        },
+        "kasa_unlock_test_20260913/canmount-off/vm-105-disk-0": {
+          "type": "volume",
+          "encryptionroot": "kasa_unlock_test_20260913/canmount-off",
+          "keystatus": "available",
+          "mounted": "-",
+          "canmount": "-"
+        },
+        "kasa_unlock_test_20260913/filesystem": {
+          "type": "filesystem",
+          "encryptionroot": "kasa_unlock_test_20260913/filesystem",
+          "keystatus": "available",
+          "mounted": "yes",
+          "canmount": "on"
+        },
+        "kasa_unlock_test_20260913/filesystem/child": {
+          "type": "filesystem",
+          "encryptionroot": "kasa_unlock_test_20260913/filesystem",
+          "keystatus": "available",
+          "mounted": "yes",
+          "canmount": "on"
+        },
+        "kasa_unlock_test_20260913/vm-105-disk-0": {
+          "type": "volume",
+          "encryptionroot": "-",
+          "keystatus": "-",
+          "mounted": "-",
+          "canmount": "-"
+        },
+        "kasa_unlock_test_20260913/volume": {
+          "type": "volume",
+          "encryptionroot": "kasa_unlock_test_20260913/volume",
+          "keystatus": "available",
+          "mounted": "-",
+          "canmount": "-"
+        }
+      }
+    },
+    {
+      "phase": "negative-service",
+      "exit_status": 0,
+      "output": "Loading key for kasa_unlock_test_20260913/canmount-off...\nSuccessfully loaded key for kasa_unlock_test_20260913/canmount-off.\ncannot mount 'kasa_unlock_test_20260913/canmount-off': 'canmount' property is set to 'off'\nFailed to mount kasa_unlock_test_20260913/canmount-off.\nLoading key for kasa_unlock_test_20260913/canmount-off/vm-105-disk-0...\nKey load error: Keys must be loaded for encryption root of 'kasa_unlock_test_20260913/canmount-off/vm-105-disk-0' (kasa_unlock_test_20260913/canmount-off).\nFailed to load key for kasa_unlock_test_20260913/canmount-off/vm-105-disk-0. Attempting to mount anyway...\ncannot open 'kasa_unlock_test_20260913/canmount-off/vm-105-disk-0': operation not applicable to datasets of this type\nFailed to mount kasa_unlock_test_20260913/canmount-off/vm-105-disk-0.\n",
+      "postrun_properties": {
+        "kasa_unlock_test_20260913": {
+          "type": "filesystem",
+          "encryptionroot": "-",
+          "keystatus": "-",
+          "mounted": "no",
+          "canmount": "on"
+        },
+        "kasa_unlock_test_20260913/canmount-off": {
+          "type": "filesystem",
+          "encryptionroot": "kasa_unlock_test_20260913/canmount-off",
+          "keystatus": "available",
+          "mounted": "no",
+          "canmount": "off"
+        },
+        "kasa_unlock_test_20260913/canmount-off/vm-105-disk-0": {
+          "type": "volume",
+          "encryptionroot": "kasa_unlock_test_20260913/canmount-off",
+          "keystatus": "available",
+          "mounted": "-",
+          "canmount": "-"
+        },
+        "kasa_unlock_test_20260913/filesystem": {
+          "type": "filesystem",
+          "encryptionroot": "kasa_unlock_test_20260913/filesystem",
+          "keystatus": "available",
+          "mounted": "yes",
+          "canmount": "on"
+        },
+        "kasa_unlock_test_20260913/filesystem/child": {
+          "type": "filesystem",
+          "encryptionroot": "kasa_unlock_test_20260913/filesystem",
+          "keystatus": "available",
+          "mounted": "yes",
+          "canmount": "on"
+        },
+        "kasa_unlock_test_20260913/vm-105-disk-0": {
+          "type": "volume",
+          "encryptionroot": "-",
+          "keystatus": "-",
+          "mounted": "-",
+          "canmount": "-"
+        },
+        "kasa_unlock_test_20260913/volume": {
+          "type": "volume",
+          "encryptionroot": "kasa_unlock_test_20260913/volume",
+          "keystatus": "available",
+          "mounted": "-",
+          "canmount": "-"
+        }
+      }
+    }
+  ],
+  "verifier_checks": [
+    {
+      "command": [
+        "/bin/bash",
+        "/var/tmp/kasa-zfs-unlock-test-20260913/proxmox-verify.sh"
+      ],
+      "returncode": 2,
+      "output": "Usage: /var/tmp/kasa-zfs-unlock-test-20260913/proxmox-verify.sh pool/encrypted-root [pool/another-root ...]\n"
+    },
+    {
+      "command": [
+        "/bin/bash",
+        "/var/tmp/kasa-zfs-unlock-test-20260913/proxmox-verify.sh",
+        "kasa_unlock_test_20260913/nonexistent"
+      ],
+      "returncode": 1,
+      "output": "cannot open 'kasa_unlock_test_20260913/nonexistent': dataset does not exist\n"
+    },
+    {
+      "command": [
+        "/bin/bash",
+        "/var/tmp/kasa-zfs-unlock-test-20260913/proxmox-verify.sh",
+        "kasa_unlock_test_20260913"
+      ],
+      "returncode": 1,
+      "output": "Encryption key is not available: kasa_unlock_test_20260913\n"
+    },
+    {
+      "command": [
+        "/bin/bash",
+        "/var/tmp/kasa-zfs-unlock-test-20260913/proxmox-verify.sh",
+        "kasa_unlock_test_20260913/filesystem"
+      ],
+      "returncode": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "/bin/bash",
+        "/var/tmp/kasa-zfs-unlock-test-20260913/proxmox-verify.sh",
+        "kasa_unlock_test_20260913/filesystem"
+      ],
+      "returncode": 1,
+      "output": "Filesystem is not mounted: kasa_unlock_test_20260913/filesystem/child\n"
+    },
+    {
+      "command": [
+        "/bin/bash",
+        "/var/tmp/kasa-zfs-unlock-test-20260913/proxmox-verify.sh",
+        "kasa_unlock_test_20260913/filesystem"
+      ],
+      "returncode": 0,
+      "output": ""
+    }
+  ],
+  "systemd_missing_key_control": [
+    {
+      "command": [
+        "systemd-run",
+        "--unit=kasa-zfs-unlock-negative-test",
+        "--wait",
+        "--property=Type=oneshot",
+        "--property=ExecStartPost=/bin/bash /var/tmp/kasa-zfs-unlock-test-20260913/proxmox-verify.sh kasa_unlock_test_20260913/canmount-off",
+        "/bin/bash",
+        "/var/tmp/kasa-zfs-unlock-test-20260913/zfs_crypto_unlock.sh"
+      ],
+      "returncode": 1,
+      "output": "Running as unit: kasa-zfs-unlock-negative-test.service\nFinished with result: exit-code\nMain processes terminated with: code=exited, status=0/SUCCESS\nService runtime: 123ms\nCPU time consumed: 93ms\nMemory peak: 3.5M (swap: 0B)\n"
+    },
+    {
+      "command": [
+        "systemctl",
+        "show",
+        "kasa-zfs-unlock-negative-test.service",
+        "-p",
+        "Result",
+        "-p",
+        "ExecMainStatus",
+        "-p",
+        "ExecStartPost"
+      ],
+      "returncode": 0,
+      "output": "Result=exit-code\nExecMainStatus=0\nExecStartPost={ path=/bin/bash ; argv[]=/bin/bash /var/tmp/kasa-zfs-unlock-test-20260913/proxmox-verify.sh kasa_unlock_test_20260913/canmount-off ; ignore_errors=no ; start_time=[Sun 2026-09-13 16:10:03 CDT] ; stop_time=[Sun 2026-09-13 16:10:03 CDT] ; pid=2335352 ; code=exited ; status=1 }\n"
+    }
+  ],
+  "guest_readbacks": {
+    "baseline": {
+      "vmid": 105,
+      "marker_sha256": "462c4ff03764c3cf44e4c2e8b37a119e0ce4d2d3a3ce6a6986cd6adb4bf2624a",
+      "console": "cat /home/cirros/zfs-marker.txt; sha256sum /home/cirros/zfs-marker.txt; cat /p\r\r\nroc/sys/kernel/random/boot_id; mount | grep /dev/sda; echo KASA_CHECK_DONE\r\nZFS-VM-ENCRYPTION-READBACK\r\n462c4ff03764c3cf44e4c2e8b37a119e0ce4d2d3a3ce6a6986cd6adb4bf2624a  /home/cirros/zfs-marker.txt\r\nc0c517e9-6b2e-4ad9-ba2d-dab3bc783fdb\r\n/dev/sda1 on / type ext3 (rw,relatime)\r\nKASA_CHECK_DONE\r\n",
+      "host_boot_id": "c05da087-b66c-4f49-ad09-e3d30f915fa9"
+    },
+    "encrypted": {
+      "vmid": 105,
+      "marker_sha256": "462c4ff03764c3cf44e4c2e8b37a119e0ce4d2d3a3ce6a6986cd6adb4bf2624a",
+      "console": "cat /home/cirros/zfs-marker.txt; sha256sum /home/cirros/zfs-marker.txt; cat /p\r\r\nroc/sys/kernel/random/boot_id; mount | grep /dev/sda; echo KASA_CHECK_DONE\r\nZFS-VM-ENCRYPTION-READBACK\r\n462c4ff03764c3cf44e4c2e8b37a119e0ce4d2d3a3ce6a6986cd6adb4bf2624a  /home/cirros/zfs-marker.txt\r\n469204c3-c5a8-4485-b009-db9437dae38b\r\n/dev/sda1 on / type ext3 (rw,relatime)\r\nKASA_CHECK_DONE\r\n",
+      "host_boot_id": "c05da087-b66c-4f49-ad09-e3d30f915fa9"
+    },
+    "postboot": {
+      "vmid": 105,
+      "marker_sha256": "462c4ff03764c3cf44e4c2e8b37a119e0ce4d2d3a3ce6a6986cd6adb4bf2624a",
+      "console": "cat /home/cirros/zfs-marker.txt; sha256sum /home/cirros/zfs-marker.txt; cat /p\r\r\nroc/sys/kernel/random/boot_id; mount | grep /dev/sda; echo KASA_CHECK_DONE\r\nZFS-VM-ENCRYPTION-READBACK\r\n462c4ff03764c3cf44e4c2e8b37a119e0ce4d2d3a3ce6a6986cd6adb4bf2624a  /home/cirros/zfs-marker.txt\r\nc0b1b307-69c0-4de0-b499-95cca35b2f3c\r\n/dev/sda1 on / type ext3 (rw,relatime)\r\nKASA_CHECK_DONE\r\n",
+      "host_boot_id": "f22acb54-e2f5-4113-bacf-2abcd6483f8d"
+    }
+  },
+  "boot_units": {
+    "source_sha256": "74c6f0078111f88ac43330159a01eba12162391913d6cebc083bafa47802bc59",
+    "import_unit": "[Unit]\nDescription=Disposable ZFS crypto compatibility test pool import\nAfter=zfs-import.target\nBefore=kasa-zfs-unlock-test.service\n[Service]\nType=oneshot\nRemainAfterExit=yes\nExecStart=/usr/sbin/zpool import -N -d /var/tmp/kasa-zfs-unlock-test-20260913 kasa_unlock_test_20260913\n",
+    "unlock_unit": "[Unit]\nDescription=Disposable ZFS crypto unlock boot compatibility test\nRequires=kasa-zfs-unlock-test-import.service\nAfter=zfs-import.target zfs-mount.service kasa-zfs-unlock-test-import.service\nBefore=pve-guests.service\nRequiresMountsFor=/var/tmp/kasa-zfs-unlock-test-20260913\n[Service]\nType=oneshot\nRemainAfterExit=yes\nExecStart=/bin/bash /var/tmp/kasa-zfs-unlock-test-20260913/zfs_crypto_unlock.sh\nExecStartPost=/usr/bin/udevadm settle --timeout=30\nExecStartPost=/bin/bash /var/tmp/kasa-zfs-unlock-test-20260913/proxmox-verify.sh kasa_unlock_test_20260913/canmount-off kasa_unlock_test_20260913/filesystem\nTimeoutStartSec=60\n[Install]\nWantedBy=multi-user.target\n",
+    "boot_id": "c05da087-b66c-4f49-ad09-e3d30f915fa9"
+  },
+  "boot_service_timings_microseconds": {
+    "kasa-zfs-unlock-test-import.service": {
+      "Result": "success",
+      "ExecMainStartTimestampMonotonic": "7007960",
+      "ExecMainExitTimestampMonotonic": "7434077",
+      "ExecMainStatus": "0",
+      "ActiveEnterTimestampMonotonic": "7434282"
+    },
+    "kasa-zfs-unlock-test.service": {
+      "Result": "success",
+      "ExecMainStartTimestampMonotonic": "7436359",
+      "ExecMainExitTimestampMonotonic": "7890322",
+      "ExecMainStatus": "0",
+      "ActiveEnterTimestampMonotonic": "8014819"
+    },
+    "pve-guests.service": {
+      "Result": "success",
+      "ExecMainStartTimestampMonotonic": "20923686",
+      "ExecMainExitTimestampMonotonic": "26350771",
+      "ExecMainStatus": "0",
+      "ActiveEnterTimestampMonotonic": "26350985"
+    }
+  },
+  "postboot_zfs": {
+    "boot_id": "f22acb54-e2f5-4113-bacf-2abcd6483f8d",
+    "properties": "kasa_unlock_test_20260913\ttype\tfilesystem\nkasa_unlock_test_20260913\tencryptionroot\t-\nkasa_unlock_test_20260913\tkeystatus\t-\nkasa_unlock_test_20260913\tmounted\tno\nkasa_unlock_test_20260913\tcanmount\ton\nkasa_unlock_test_20260913/canmount-off\ttype\tfilesystem\nkasa_unlock_test_20260913/canmount-off\tencryptionroot\tkasa_unlock_test_20260913/canmount-off\nkasa_unlock_test_20260913/canmount-off\tkeystatus\tavailable\nkasa_unlock_test_20260913/canmount-off\tmounted\tno\nkasa_unlock_test_20260913/canmount-off\tcanmount\toff\nkasa_unlock_test_20260913/canmount-off/vm-105-disk-0\ttype\tvolume\nkasa_unlock_test_20260913/canmount-off/vm-105-disk-0\tencryptionroot\tkasa_unlock_test_20260913/canmount-off\nkasa_unlock_test_20260913/canmount-off/vm-105-disk-0\tkeystatus\tavailable\nkasa_unlock_test_20260913/canmount-off/vm-105-disk-0\tmounted\t-\nkasa_unlock_test_20260913/canmount-off/vm-105-disk-0\tcanmount\t-\nkasa_unlock_test_20260913/filesystem\ttype\tfilesystem\nkasa_unlock_test_20260913/filesystem\tencryptionroot\tkasa_unlock_test_20260913/filesystem\nkasa_unlock_test_20260913/filesystem\tkeystatus\tavailable\nkasa_unlock_test_20260913/filesystem\tmounted\tyes\nkasa_unlock_test_20260913/filesystem\tcanmount\ton\nkasa_unlock_test_20260913/filesystem/child\ttype\tfilesystem\nkasa_unlock_test_20260913/filesystem/child\tencryptionroot\tkasa_unlock_test_20260913/filesystem\nkasa_unlock_test_20260913/filesystem/child\tkeystatus\tavailable\nkasa_unlock_test_20260913/filesystem/child\tmounted\tyes\nkasa_unlock_test_20260913/filesystem/child\tcanmount\ton\nkasa_unlock_test_20260913/vm-105-disk-0\ttype\tvolume\nkasa_unlock_test_20260913/vm-105-disk-0\tencryptionroot\t-\nkasa_unlock_test_20260913/vm-105-disk-0\tkeystatus\t-\nkasa_unlock_test_20260913/vm-105-disk-0\tmounted\t-\nkasa_unlock_test_20260913/vm-105-disk-0\tcanmount\t-\nkasa_unlock_test_20260913/volume\ttype\tvolume\nkasa_unlock_test_20260913/volume\tencryptionroot\tkasa_unlock_test_20260913/volume\nkasa_unlock_test_20260913/volume\tkeystatus\tavailable\nkasa_unlock_test_20260913/volume\tmounted\t-\nkasa_unlock_test_20260913/volume\tcanmount\t-\n",
+    "data_readback": "pass"
+  },
+  "cleanup_audit": {
+    "test_directory_removed": true,
+    "test_vm_removed": true,
+    "test_storage_entries_removed": true,
+    "test_pool_key_vdev_units_removed": true,
+    "original_dataset_inventory_preserved": true,
+    "original_pool_health": "ONLINE, no known data errors",
+    "pve_guests_service": "active",
+    "failed_systemd_units": 0,
+    "cluster_quorate": true
+  },
+  "limitations": [
+    "One successful host reboot; missing-key service failure tested without a second reboot.",
+    "File-backed pool imported by a dedicated temporary importer; no physical data-pool discovery test.",
+    "Synthetic local key file; no USB or remote-key mount test.",
+    "VM locked-disk start blocked; controller timed out at 90 seconds and Proxmox worker was cancelled.",
+    "Guest console checks retried after networkless startup exceeded the original 180-second wait."
+  ]
+}
